@@ -7,15 +7,15 @@ def lista_troca_menor_primeiro(lista):
             indice = x
     
     l = lista.copy()
-    l[indice] = l[0]
-    l[0] = menor
+    lista[indice] = lista[0]
+    lista[0] = menor
     
+    trocou = 1
     if l == lista:
-        return 0, l
-    return "1" + '!' + \
-           l
+        trocou = 0
+    return trocou
 
-lista = [2, 4, 6, 8, 1, 3, 5, 7]
-print(lista_troca_menor_primeiro(lista))     
-    # return 1, l
 
+l = [2, 4, 6, 8, 1, 3, 5, 7]
+
+print(lista_troca_menor_primeiro(l))
