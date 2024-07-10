@@ -1,10 +1,6 @@
 def lista_troca_menor_primeiro(lista):
-    menor = 100
-    indice = 0
-    for x in range(0, len(lista)):
-        if lista[x] < menor:
-            menor = lista[x]
-            indice = x
+    menor = min(lista)
+    indice = lista.index(menor)
     
     l = lista.copy()
     lista[indice] = lista[0]
@@ -16,6 +12,6 @@ def lista_troca_menor_primeiro(lista):
     return trocou
 
 
-l = [2, 4, 6, 8, 1, 3, 5, 7]
+l = [91, 58, -41, 85, -81, 87, 9, 10, -49, 39]
 
 print(lista_troca_menor_primeiro(l))
