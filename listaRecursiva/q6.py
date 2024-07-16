@@ -1,14 +1,14 @@
 
 
-def fatorial(x):
-    if x == 0:
+def comb(n,k):
+    
+    if n==k:
         return 1
-    r = x*fatorial(x-1)
-    return r
+    if k == 1:
+        return n
 
-def form(n,k):
+    result = comb(n-1,k-1) + comb(n-1,k)
 
-    result = 
+    return result
 
-
-print(fatorial(4))
+print(comb(6,3))
