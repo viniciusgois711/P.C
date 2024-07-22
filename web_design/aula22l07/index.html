@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    
+    <!-- tag de formulario, precisa abrir e fechar, o action é quem vai receber esses dados -->
+    <form action="dadosenviados.html" method="get">
+        <!-- o for da label é igual ao id do input -->
+        <label for="login">Login: </label>
+        <!-- Componente de entrada, 
+            value: serve para deixar um valor predefinido, 
+            placeholder: deixar um rotulo doq é para digitar
+            required: Deixa aquele elemento obrigatorio ser preenchido
+        -->
+        <input type="text" id="login" placeholder="Usuario" maxlength="5" required><br>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" placeholder="Senha" required><br>
+        <input type="submit" value="Entrar">
+
+    </form>
+
+
+</body>
+</html>
