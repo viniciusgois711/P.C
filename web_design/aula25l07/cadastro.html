@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="dadosenviados.html">
+
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome"><br>
+
+        
+        <label for="filhos">No de filhos: </label>
+        <!-- Caixinha para numeros, tem setinhas do lado para aumentar ou diminuir -->
+        <input type="number" id="filhos"><br>
+        
+        <label for="idade">Idade</label>
+        <!-- tipo range é uma barra que o usuario escolhe o progresso -->
+        <input type="range" id="idade" max="20" min="0"><br>
+
+        <label for="uf">UF:</label>
+        <!-- caixinha de seleção, o option são as opcoes totais, o value é para ser usado na progrmação, usar como uma variavel -->
+        <select name="uf" id="uf">
+            <option value="rn">RN</option>
+            <option value="pb">PB</option>
+            <option value="pe">PE</option>
+        </select><br>
+
+        <label for="cidade">Cidade: </label>
+        <!-- O list é Parecido com o select, mas o usuario pode digitar -->
+        <input type="text" id="cidade" list="lista-cidades">
+        <datalist id="lista-cidades">
+
+            <option value="natal">Natal</option>
+            <option value="rec">Recife</option>
+            <option value="jp">João Pessoa</option>
+
+        </datalist>
+
+        <!-- Serve para separa formulario, fica uma borda ao redor -->
+        <fieldset>
+
+            <legend>Áreas de Interesse</legend>
+            <!-- colocar o input dentro do label, para quando clicar no label, ele ja ser selecionado, e n precisar clicar na caixinha -->
+            <!-- São caixinha que pode escolher varias, e precisa do name e value -->
+            <label><input type="checkbox" name="areas" value="design"> Design</label><br>
+            <label><input type="checkbox" name="areas" value="manu"> Manutencao</label><br>
+            <label><input type="checkbox" name="areas" value="redes"> Redes</label><br>
+            <!-- checked serve para ja deixar marcado -->
+            <label><input type="checkbox" name="areas" value="prog" checked> Programação</label><br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Formatação</legend>
+
+            <label><input type="radio" name="formacao" value="medio">Medio</label>
+            <label><input type="radio" name="formacao" value="superior">Superior</label>
+            <label><input type="radio" name="formacao" value="mestre">Mestre</label>
+            <label><input type="radio" name="formacao" value="dr" checked>Doutor</label>
+
+        </fieldset>
+
+        <!-- Limpar os dados -->
+        <input type="reset" value="limpar">
+        <!-- Botao de submit -->
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
+
+
+
