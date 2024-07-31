@@ -11,4 +11,4 @@ def comb(n,k):
 
     return result
 
-print(comb(6,3))
+print(comb(6,4))
