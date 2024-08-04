@@ -5,10 +5,11 @@
 
 header{
     background-color: rgb(52, 131, 114);
-    padding: 4em;
+    padding: 2em;
     margin-right: 2em;
 
 }
+
 
 header nav li{
     list-style-type: none;
@@ -19,12 +20,17 @@ header nav li a{
     text-decoration:none;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
-    margin: 1em;
+    margin-top: 1em;
 }
-h1 a{
+header h1 a{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+header h1{
+    margin-bottom: 1.5em;
 }
 
 body{
@@ -34,6 +40,7 @@ body{
 
 form{
     margin-top: 2em;
+    max-width: 20em;
 }
 
 h2#relatorio{
@@ -41,6 +48,42 @@ h2#relatorio{
     margin-bottom: 3em;
 }
 
-p#prof{
-    margin-right: 1em;
+ul{
+    list-style-type: none;
 }
+
+nav#inferior{
+    background-color: white;
+    padding: 1em;
+}
+
+ul li{
+    display: inline-block;
+    flex-direction: row;
+}
+
+
+div.card{
+    background-color: gainsboro;
+    border: 1px solid;
+    max-width: 10em;
+    text-align: center;
+    display: inline-block;
+    margin: 1em;
+}
+
+div.card p#desc{
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+}
+
+p#prof{
+    margin-left: 60em;
+    margin-top: 0em;
+}
+
+svg#seta{
+    margin-left: 60em;
+    margin-top: 0em;
+}
+
