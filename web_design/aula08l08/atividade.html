@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    main{
+        width: 90em;
+        margin: 0 auto;
+        border: 1px solid black;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "nav a a b c"
+        "nav d d d c"
+        "nav e e e c";
+    }
+    
+    nav.area-nav{
+        grid-area: nav;
+    }
+    div.area-a{
+        grid-area: a;
+    }
+    div.area-b{
+        grid-area: b;
+    }
+    div.area-c{
+        grid-area: c;
+    }
+    div.area-d{
+        grid-area: d;
+    }
+    div.area-e{
+        grid-area: e;
+    }
+    
+    main div, nav{
+        background-color: cornflowerblue;
+        padding: 1em;
+        margin: 0.5em;
+        border: 1.5px solid black;
+    }
+
+    </style>
+
+
+</head>
+<body>
+
+    <main>
+        <nav class="area-nav"><p>Nav</p></nav>
+        <div class="area-a"><p>A</p></div>
+        <div class="area-b"><p>B</p></div>
+        <div class="area-c"><p>C</p></div>
+        <div class="area-d"><p>D</p></div>
+        <div class="area-e"><p>E</p></div>
+    </main>
+
+</body>
+</html>
