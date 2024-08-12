@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0   ;
+}
+
+nav.nav{
+    grid-area: nav;
+    background-color: #2980B9;
+}
+
+div.sobre{
+    grid-area: sobre;
+}
+
+div.eventos{
+    grid-area: eventos;
+}
+
+div.programacao{
+    grid-area: programacao;
+}
+
+div.amanda{
+    grid-area: amanda;
+}
+
+div.natalia{
+    grid-area: natalia;
+}
+
+div.henrique{
+    grid-area:henrique;
+}
+
+div.larissa{
+    grid-area:larissa;
+}
+
+div.formulario{
+    grid-area:formulario;
+}
+
+div.organizacao{
+    grid-area:organizacao;
+}
+
+footer{
+    grid-area:footer;
+    background-color:#224459;
+    padding: 4em;
+    color: white;
+    text-align: center;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+header{
+    background: linear-gradient(to left,#7292A6, #224459);
+    color: white;
+    padding: 1em;
+}
+
