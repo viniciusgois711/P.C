@@ -1,11 +1,20 @@
 *{
     padding: 0;
-    margin: 0   ;
+    margin: 0;
 }
 
 nav.nav{
     grid-area: nav;
-    background-color: #2980B9;
+    background-color: #7292A6;
+}
+
+nav ol li a{
+    text-decoration:none;
+    list-style-type: none;
+    color:  #2980B9;
+    font-size: 1.8em;
+    display: ;
+    
 }
 
 div.sobre{
@@ -50,6 +59,21 @@ footer{
     padding: 4em;
     color: white;
     text-align: center;
+    margin-top: 1em;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 16em 16em auto 16em 16em;
+    grid-template-areas:
+    "nav sobre programacao programacao amanda"
+    "nav eventos formulario natalia henrique"
+    "nav larissa formulario organizacao organizacao";
+    gap: 1em;
+}
+
+div.box{
+    background-color: #7292A6;
 }
 
 body{
@@ -61,5 +85,6 @@ header{
     background: linear-gradient(to left,#7292A6, #224459);
     color: white;
     padding: 1em;
+    margin-bottom: 1em;
 }
 
