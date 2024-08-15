@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wtads - 9 a 11 de setembro</title>
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        header, footer{
+            color: white;
+            padding: 2em;
+            background-color: darkgreen;
+        }
+        main{
+            padding-bottom: 1em;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            /* quando aplica posicionamento, o elemento perde a largura */
+            width: 100%;
+        }
+
+        main p{
+            margin: 2em;
+        }
+
+        div#modal, div.box{
+            width: 20em;
+            height: 20em;
+            background-color: rgba(12,266, 41, 0.9);
+            padding: 2em;
+            /* não mexe no padding, ele n aumenta o tamanho da caixa, so a parte interna */
+            box-sizing: border-box;
+            /* posicionamento absoluto, vai para onde eu quiser */
+            position: absolute;
+
+            /* coloca uma horizontal e uma veetical, ex.: rigth e bottom ou top e right, etc... */
+            left: 300px;
+            top: 300px;
+            /* right: ;
+            bottom: ; */
+
+            /* recebe um numero inteiro e o maior numero vai ficar mais em cima */
+            z-index:1;
+        }
+
+        div.box1{
+            left: 400px;
+            top: 400px;
+            background-color: royalblue;
+            z-index: 2;
+        }
+
+        div.box2{
+            left: 500px;
+            top: 500px;
+            background-color: violet;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <header>WTADS</header>
+    <div id="modal">
+        <button id="fechar">(X) FECHAR</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ea error libero explicabo! Consequatur nam excepturi vitae recusandae molestias. Cupiditate culpa perspiciatis molestiae. Sapiente doloribus asperiores placeat possimus, tempore labore?</p>    
+    </div>
+    <div class="box box1">teste</div>
+    <div class="box box2">teste2</div>
+    <main>
+        <button id="showmodal">MOSTRAR MODAL</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, alias corporis neque dolores illo maxime ducimus nostrum tempora tempore mollitia minima at voluptatibus incidunt minus, commodi rem veniam distinctio veritatis?</p>
+        <p>Eveniet est repellendus inventore fuga expedita quia rem maiores vitae ut voluptatem possimus odio nostrum reiciendis facilis maxime explicabo, accusantium suscipit. Eaque maxime deleniti voluptatem voluptas vero ab qui libero.</p>
+        <p>Dicta eum quia nihil magni provident aperiam voluptatum velit enim et, optio dignissimos possimus totam! Laudantium dolor amet commodi perspiciatis, obcaecati natus quas est architecto hic veritatis debitis eaque iste.</p>
+        <p>Sequi, tempore atque! Ipsa repellendus rerum necessitatibus ad officiis neque possimus asperiores, quos dignissimos, dolorem doloribus dicta fugit eos consequatur ex! Qui deserunt expedita quas possimus ipsum! Praesentium, eum omnis!</p>
+        <p>Possimus hic facere omnis, eaque ullam nihil suscipit quos quisquam alias esse nemo aperiam. Deserunt expedita cumque quo, odio a pariatur consectetur repellendus temporibus, ab, nostrum labore deleniti similique quis.</p>
+        <p>Veniam eius iste voluptates rem quo amet! Aliquam ab cum cumque dolor necessitatibus tempora, voluptates illo nobis odio, ut similique dignissimos ex et aspernatur sit repellat repellendus sunt. At, corrupti?</p>
+        <p>Quia deserunt amet nemo minus tenetur enim magni praesentium! Eaque modi soluta omnis excepturi qui saepe aperiam odit sunt enim autem repellat, impedit iusto non aliquam suscipit sequi error corrupti.</p>
+        <p>Sunt itaque voluptatem, iure totam ducimus deleniti. Ex totam assumenda autem ab eligendi? Iusto nesciunt ratione ex, quod vero illum, explicabo ad deserunt, cumque facilis nostrum nisi officiis? Officiis, veritatis.</p>
+        <p>Obcaecati aperiam reiciendis, molestias enim fugiat omnis nostrum quos temporibus voluptate quia rerum laudantium libero reprehenderit eveniet inventore. Amet id odio expedita sint cupiditate voluptas saepe, quaerat quo eligendi laudantium.</p>
+        <p>Dicta earum, ad, distinctio voluptatem iure optio consequatur debitis officiis suscipit unde quo consectetur reprehenderit asperiores saepe culpa aperiam. Temporibus ullam saepe eaque molestias eum omnis, facilis sapiente fugiat quisquam.</p>
+        <p>Fuga quasi libero nam architecto, quam tempore error veritatis sint doloribus sunt quae a odit corrupti explicabo ipsum quod nihil porro maxime rerum autem dolor, deleniti itaque distinctio! Dolor, quasi!</p>
+        <p>Dignissimos placeat maiores nesciunt cumque veritatis aut a quibusdam, doloribus modi esse. In, quam minus quas praesentium laudantium nam quisquam recusandae iure fuga, est non veritatis earum sit. Asperiores, fugit?</p>
+        <p>Earum inventore corporis dicta, quo omnis nisi provident non corrupti eaque officia? Aliquid amet tenetur, beatae hic sunt deserunt, perferendis adipisci aut voluptas repellat eos, dolores ex ipsam temporibus! Sit.</p>
+        <p>Sit, inventore, reprehenderit iste magni officiis voluptas optio tempore, deleniti ipsa debitis aut ut aliquam laborum adipisci repellat fugit totam amet vero qui nesciunt iure. Vel aperiam at non cum.</p>
+        <p>Debitis vero et modi magnam, sed qui laborum amet voluptatem nisi delectus ducimus. Error exercitationem magni odit placeat, tempora sequi quod laudantium quidem, cum, est aspernatur optio rerum quis cumque.</p>
+        <p>Incidunt labore voluptate dolores sed voluptatum, odit pariatur error soluta voluptas voluptatibus minima! Atque hic voluptate sunt natus veniam debitis quo consequatur dignissimos quae ipsam, ea ducimus id vitae fuga.</p>
+        <p>Nobis odit molestias sequi repellendus nesciunt corrupti eveniet iusto voluptate illo temporibus praesentium optio quaerat magni suscipit, nihil consectetur non quis voluptatibus nostrum accusamus tenetur quae laboriosam placeat illum? Praesentium!</p>
+        <p>Alias ab et nihil cum error nulla, voluptas impedit asperiores molestias debitis illum modi fugiat, facilis nesciunt eligendi provident! Facilis obcaecati in, ratione ut et cupiditate placeat. Officia, provident veniam.</p>
+        <p>Enim, deserunt repellat a totam animi iusto culpa saepe laudantium facere corrupti suscipit nemo, quaerat rerum dolores magni sequi quisquam ex dignissimos laborum dolorum! Quasi id et tempora laudantium facilis.</p>
+        <p>Dolores veniam iste praesentium doloribus deleniti magni quae excepturi ducimus vel? Adipisci blanditiis debitis eius a dignissimos veniam nulla ea, atque quod quia amet laborum natus tempore! Ratione, eligendi est!</p>
+        <p>Nam natus repellendus nulla dignissimos ullam sequi, laborum praesentium nisi incidunt vitae facere quas, veniam quam rem corporis omnis aut minima ducimus harum laudantium corrupti porro! Voluptatum repellendus saepe aperiam.</p>
+        <p>Est vitae sequi ex blanditiis quis natus aut consectetur quod minima ab, optio nemo ipsum fugit adipisci fuga necessitatibus eaque suscipit dolorum totam, dolor ipsa voluptatibus magnam neque? Illum, dolore?</p>
+        <p>Veniam quaerat quidem iure enim ex dolores eos minus laudantium? In, doloremque quibusdam ducimus qui aliquid officia perferendis, debitis repudiandae quas fugiat ipsam natus architecto. Ea beatae consectetur non quasi?</p>
+        <p>Minima fugit inventore reprehenderit ducimus officiis, repellendus a repellat, quis ea et doloremque tempore iste odio quas ad velit adipisci ab corporis. Accusamus laborum omnis voluptatum unde ipsum veritatis quas!</p>
+        <p>Eos vero delectus ab molestias natus magnam nesciunt culpa suscipit at sint blanditiis soluta error corporis ullam laudantium qui, ad consequatur rerum reprehenderit illum, optio ducimus numquam quae similique! Ex.</p>
+        <p>Deleniti ut totam cumque voluptate, nihil libero amet, incidunt sit nemo maiores reprehenderit soluta. Cumque architecto, odit tempora sunt, illo dolorum ipsam eligendi officiis velit deserunt corrupti totam possimus nostrum?</p>
+        <p>Praesentium eveniet dolores ut vero ad reiciendis alias, cumque maxime laudantium quibusdam placeat nisi distinctio, ducimus voluptate ullam consectetur inventore, qui nobis doloremque illo exercitationem. Totam eos praesentium neque commodi.</p>
+        <p>Facilis nulla unde sapiente aspernatur. Quos porro aliquid nesciunt excepturi consequuntur minus a alias ipsa, debitis officia repellendus dolorem, labore eaque pariatur deleniti voluptatum nemo inventore natus, magnam voluptatibus incidunt!</p>
+        <p>Cupiditate alias asperiores voluptas sapiente quibusdam debitis harum ab mollitia, explicabo sunt soluta animi quis voluptate officiis quae nemo facilis fugiat illum magni corporis. Non labore vel deserunt iste quam!</p>
+        <p>Deserunt doloremque dolorum expedita magni, nemo amet ullam quam earum impedit minus facere molestias obcaecati tempore commodi voluptatem animi itaque sit maxime nobis hic eveniet iure vero nesciunt! Illum, excepturi?</p>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por</p>
+    </footer>
+    <script>
+    document.getElementById('fechar').addEventListener("click", modal);
+    document.getElementById('showmodal').addEventListener("click", modal);
+
+    function modal(){
+        if(window.getComputedStyle(document.querySelector('#modal')).visibility == 'visible')
+        document.getElementById('modal').style.visibility = "hidden";
+        
+        else
+        document.getElementById('modal').style.visibility = "visible";
+        
+    }
+
+
+    </script>
+</body>
+</html>
