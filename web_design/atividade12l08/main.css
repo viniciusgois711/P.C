@@ -74,28 +74,86 @@ table td{
 
 }
 
+div#nome{
+    background-color: rgba(0,0,0,0.5);
+    padding: 1.6em;
+    text-align: center;
+    margin-top: 3.5em;
+    color: white;
+}
+
+
 div.amanda{
     grid-area: amanda;
+    background-image: url(img/amanda.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
 }
 
 div.natalia{
     grid-area: natalia;
+    background-image: url(img/georgia.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+
 }
 
 div.henrique{
     grid-area:henrique;
+    background-image: url(img/henrique.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
 }
 
 div.larissa{
     grid-area:larissa;
+    background-image: url(img/ellen.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
 }
 
 div.formulario{
     grid-area:formulario;
+    padding: 2em;
+}
+
+input.inputtext{
+    padding: 1em;
+    /* padding-right: 15em; */
+    margin-top: 1em;
+    border: solid gray 3px;
+    width: 25em;
+}
+input#aluno{
+    margin-top: 2em;
+}
+
+input#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    background-color: black; 
+    margin: 2em auto;
+    padding: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
 }
 
 div.organizacao{
     grid-area:organizacao;
+    padding: 2em;
+    padding-right: 10em;
+}
+
+div.organizacao p{
+    margin-top: 2em;
+}
+
+div.organizacao ul li{
+    margin-top: 1em;
+    margin: 1em;
+
 }
 
 footer{
@@ -109,14 +167,11 @@ footer{
 
 main{
     display: grid;
-    /* grid-template-columns: 15em 17em auto 16em 16em;
-    grid-template-rows: 12em 12em 10em; */
     grid-template-areas:
     "nav sobre programacao programacao amanda"
     "nav eventos formulario natalia henrique"
     "nav larissa formulario organizacao organizacao";
-    gap: 0.7em;
-    
+    gap: 0.7em; 
 }
 
 div.box{
@@ -125,6 +180,10 @@ div.box{
 
 body{
     font-family: 'Roboto Mono', monospace;
+}
+
+h3{
+    font-size: 1.5em;
 }
 
 
