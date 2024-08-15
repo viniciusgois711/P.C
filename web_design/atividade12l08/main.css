@@ -1,32 +1,77 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 nav.nav{
     grid-area: nav;
-    background-color: #7292A6;
+    background-color: #C5D1D9;
+
 }
 
 nav ol li a{
     text-decoration:none;
-    list-style-type: none;
     color:  #2980B9;
     font-size: 1.8em;
-    display: ;
-    
+}
+nav ol li{
+    padding: 1.5em;
+    padding-bottom: 2em;
+    list-style-type: none;
 }
 
 div.sobre{
     grid-area: sobre;
+    padding: 1.5em;
+}
+
+div.sobre p{
+    margin-bottom: 0.8em;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+div.sobre a#lerMais{
+    text-decoration: none;
+    border: solid #224459 2px;
+    color: #224459;
+}
+
+strong{
+    color: #224459;
 }
 
 div.eventos{
     grid-area: eventos;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+
+div.eventos ul li{
+    margin: 0.7em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.programacao{
     grid-area: programacao;
+    padding: 2em;
+}
+
+table{
+    border: solid white 1px;
+    border-spacing: 0;
+    margin-top: 1em;
+
+}
+table td{
+    border: solid white 1px;
+    /* text-align: center; */
+    /* line-height: 2em; */
+    padding-right: 3em;
+    padding-left: 3.5em;
+
 }
 
 div.amanda{
@@ -59,21 +104,23 @@ footer{
     padding: 4em;
     color: white;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 0.8em;
 }
 
 main{
     display: grid;
-    grid-template-columns: 16em 16em auto 16em 16em;
+    /* grid-template-columns: 15em 17em auto 16em 16em;
+    grid-template-rows: 12em 12em 10em; */
     grid-template-areas:
     "nav sobre programacao programacao amanda"
     "nav eventos formulario natalia henrique"
     "nav larissa formulario organizacao organizacao";
-    gap: 1em;
+    gap: 0.7em;
+    
 }
 
 div.box{
-    background-color: #7292A6;
+    background-color: #ECECEC;
 }
 
 body{
@@ -85,6 +132,6 @@ header{
     background: linear-gradient(to left,#7292A6, #224459);
     color: white;
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
 }
 
