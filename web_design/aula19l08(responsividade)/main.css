@@ -1,0 +1,33 @@
+body{
+    background-color: blueviolet;
+}
+
+div{
+    display: flex;
+}
+
+/* media: estrategia de if que o css usa */
+/* sreen: referenciar a tela */
+@media screen and (max-width:1000px){
+    body{
+        background-color: chocolate;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: darkgreen;
+    }
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-color: crimson;
+    }
+    p.teste{
+        display: none;
+    }
+    div{
+        display: block;
+    }
+}
