@@ -36,7 +36,20 @@
             document.getElementById('b').style.border = "1em solid red";
         }
     }
-    </script>
 
+    document.body.addEventListener('keypress', function(e){
+        document.getElementById('cont').innerHTML = String.fromCharCode(e.keyCode);
+    })
+
+    documen.body.onscroll = function(){
+        alert('teste scroll');
+    }
+
+    </script>
+    <style>
+        body{
+            height: 110vh;
+        }
+    </style>
 </body>
 </html>
