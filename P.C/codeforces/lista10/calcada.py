@@ -8,17 +8,15 @@ for x in range(0, qtdEntrada):
 
 if qtdEntrada>2:
     for x in range(0, qtdEntrada-1):
-        primeiro = entrada[x]
 
         for y in range(x+1, qtdEntrada):
+            primeiro = entrada[x]
             segundo = entrada[y]
 
-            if primeiro != segundo:
-                contador = 2
-            else: 
-                contador = 1
+            ultimo = segundo
+            if 
 
-            for z in range(x+2, qtdEntrada):
+            for z in range(y+1, qtdEntrada):
                 if entrada[z] == primeiro and entrada[z] != segundo:
                     t = primeiro
                     primeiro = segundo

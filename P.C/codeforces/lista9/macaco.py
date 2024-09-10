@@ -1,3 +1,4 @@
+l = []
 while True:
     qtd = int(input())
     if qtd == 0:
@@ -19,7 +20,18 @@ while True:
             maiorV = v
 
     if maiorX > menorU or menorY < maiorV:
-        print('nenhum')
+        nova = []
+        l.append(nova)
+        nova.append('nenhum')
     else:
-        print(maiorX, menorY, menorU, maiorV)
+        nova = []
+        l.append(nova)
+        nova.append(maiorX)
+        nova.append(menorY)
+        nova.append(menorU)
+        nova.append(maiorV)
 
+for x in range(0, len(l)):
+    print("Teste", x+1)
+    print(*l[x])
+    print()
